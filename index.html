@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script><!--for clock symbol-->
+   
+  </head>
+  <body>
+  <div class="con"> 
+    <div id="navbar">
+        <a href="#home">Home</a>
+        <a href="#home">About</a>
+        <a href="#home">Services</a>
+        <div id="navbar-right">
+          <a href="#home">Blog</a>
+          <a href="#home">Contact</a>
+          <a class="home" href="#home">Signup Now</a>
+
+        </div>  
+    </div>  
+    
+   
+      <div class="slideshow-container">
+
+          <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="images/image1.jpg" style="width: 100%;height: 100vh">
+              <div class="left-top" align="left"><h1 style="color:#fff;font-size: 45px;font-weight: 400;" align="left">Our motto is to balance<br>risk with growth<br></h1>
+                <p style="color:#fff;font-size:20px;font-weight: 400;" align="left">perfect blend of spacious layouts, percise<br> typography and trendy design elemnts</p><br>
+                <button class="learn" onclick="location.reload()" >Learn More</button>
+              </div>
+              <script type="text/javascript">
+                function refreshpage() {
+                  window.location.reload();
+                }
+              </script>
+              
+          </div>
+
+          <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="images/image2.jpg" style="width: 100%;height: 100vh">
+              <div class="centerd"><h1 style="color:#94a0d6;font-size: 45px;font-weight: 400;">Our motto is to balance<br>risk with growth<br></h1>
+                <p style="color:#94a0d6;font-size:15px;font-weight: 400;">perfect blend of spacious layouts, percise typography<br> and trendy design elemnts</p>
+                <button class="Contact" >Contact Us</button></div>
+             
+          </div>
+
+          <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="images/image3.jpg" style="width: 100%;height: 100vh">
+              <div class="right-top"><h1 style="color:#fff;font-size: 45px;font-weight: 400;">Our motto is to balance<br>risk with growth<br></h1>
+                <p style="color:#fff;font-size:15px;font-weight: 400;">perfect blend of spacious layouts, percise typography<br> and trendy design elemnts</p>
+                <button class="about" >About Us</button></div>
+             
+          </div>
+          
+
+         
+
+    </div>
+      <br>
+
+      <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+  </div>        
+
+        <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+
+        <div class="row">
+          <div class="column" style="background-color:#fff;">
+            <div class="rowalign">
+              <b style="color:black;font-weight:300;font-size: 40px;">Some of the investment<br> services we offer</b>
+              <p>Over 30 high quality professionally designed pre-built<br> website concepts to choose from. Build your website<br> using a fully visual interface, using our revolutionary page<br> & header builder.</p> 
+              <br>
+              <button class="but">VIEW MORE</button>
+            </div>
+          </div>
+          <div class="column" style="background-color:#fff;">
+           <div class="online"> 
+            <div class="card">
+              <img src="images/image4.png" alt="Avatar"style="width:70%;height:30vh;" >
+              <div class="container">
+                <h4><b>Equity Markets</b></h4> 
+                <p>Invest and Trades in companies you<br> believe in directly.</p> 
+              </div>
+
+            </div>
+             <div class="card">
+              <img src="images/image16.png" alt="Avatar"style="width:70%;height:30vh;" >
+              <div class="container">
+                <h4><b>Equity Markets</b></h4> 
+                <p>Invest and Trades in companies you<br> believe in directly.</p> 
+              </div>
+
+            </div>
+          </div>  
+          <div class="online"> 
+            <div class="card">
+              <img src="images/image17.png" alt="Avatar"style="width:70%;height:30vh;" >
+              <div class="container">
+                <h4><b>Equity Markets</b></h4> 
+                <p>Invest and Trades in companies you<br> believe in directly.</p> 
+              </div>
+
+            </div>
+             <div class="card">
+              <img src="images/image18.png" alt="Avatar"style="width:70%;height:30vh;" >
+              <div class="container">
+                <h4><b>Equity Markets</b></h4> 
+                <p>Invest and Trades in companies you<br> believe in directly.</p> 
+              </div>
+
+            </div>
+          </div>  
+          </div>
+        </div>
+        <div class="inline">
+            <div class="card1">
+              <img src="images/image5.png" alt="Avatar" style="width:100%;height:50vh;">
+              <div class="container1">
+                <b>I Want to <span class="green">borrow</span><br>some money.</b>
+                <p class="asdf">Learn More ></p> 
+              </div>
+            </div> 
+            <div class="card1">
+              <img src="images/image6.jpg" alt="Avatar" style="width:100%; height:50vh;">
+              <div class="container1">
+                <b>I want to <span class="green">invest</span><br>some money</b> 
+                <p class="asdf">Learn more></p> 
+              </div>
+            </div> 
+            <div class="te">
+                <p class="text">Its time to make your money<br> work for you</p>
+                <p class="text1">Over 30 high quality professionally designed pre-built<br> website concepts to choose from. Build your website <br>using a fully visual interface, using our revolutionary page<br> & header builder.</p>
+                <br>
+                <button class="butt">View more</button>
+            </div>   
+        </div>
+        <div class="image">
+            <div class="comma"><p style="color:#8f9696;">.</p></div>
+            <p class="seq" style="color:#4b4f4f;"><span style="color:#8f9696;">,,</span><br>A big part of financial<br>freedom is having your heart<br>and mind free from worry<br>about the what-ifs of life.</p>
+            <b class="com">Tony Stark,<br><b>
+              <p class="comm">STARK INDUSTRIES</p>
+
+        </div>  
+        <div class="works">
+            <p style="color:#8f9696; font-size:10px;" align="center" >HOW IT WORKS</p>
+            <p align="center" style="color: #4e524f;font-size: 30px;font-weight: 300;">A Simple Process</p>
+           
+              <table class="center">
+                <tr>
+                  <td align="center"><img src="images/image8.png" style="width:10vw;height:25vh; "></td>
+                  
+                  <td align="center"><img src="images/image9.png" style="width:10vw;height:25vh; "></td>
+                  
+                  <td align="center"><img src="images/image10.png" style="width:10vw;height:25vh; "></td>
+                </tr> 
+                <tr class="sign">
+                  <td align="center">Sign Up</td>
+                  <td align="center">Pick your investment</td>
+                  <td align="center">Watch your wealth grow</td>
+                </tr> 
+                <tr class="colro">
+                    <td style="color:#9aa19c;padding: 10px;">Wireframing has its pros and cons as it <br>the crutial part of the design stage.</td>
+                    <td style=" color:#9aa19c;padding: 10px;">Total damage has been caused by the<br> civilians around the new apple store.</td>
+                    <td style=" color:#9aa19c;padding: 10px;">Total damage has been caused by the<br> civilians around the new apple store.</td>
+                </tr> 
+              </table> 
+              <table>
+                <tr>
+                  <td><img src="images/image11.png" style="width:50vw;height:90vh;"></td>
+                  <td><p style="font-size:40px;font-weight: 200;">Time tested investment methods</p>
+                    <p style="font-size: 25px;color: #9da0a6;margin-left:10px;">Over 30 high quality professionally designed<br> pre-built website concepts to choose from.</p> 
+                    <p>1)No Hidden Charges or tricks</p>
+                    <p>2)Quick and Safe Transactions</p>
+                    <p>3)An award winning company</p></td>
+                </tr>
+              </table>  
+              <hr>
+              <div class=finance>   
+                <table>
+                  <tr>
+                     something has to add
+                  </tr> 
+                </table>
+                <div class="row1">
+                  <div class="column1">
+                    <div class="card1">
+                      <p class="top">ROI &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; <span style="color:#53f241;font-weight: 900;font-size: 15px;">%</span></p>
+                      <p class="center">17%</p>
+                      <p class="low">Performance over 3 Years</p>
+                    </div>
+                  </div>
+
+                  <div class="column1">
+                    <div class="card2">
+                      <p class="top">Fund value &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#fff;font-weight: 900;font-size: 15px;">$</span></p>
+                      <p class="center" > 126 Million</p>
+                      <p class="low">Tested on Pingdom.com</p>
+                    </div>
+                  </div>
+                  
+                  <div class="column1">
+                    <div class="card1">
+                       <p class="top">Experience &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#53f241;font-weight: 900;font-size: 15px;"><i style='font-size:24px' class='far'>&#xf017;</i></span></p>
+                      <p class="center">10 Years</p>
+                      <p class="low">Of Successful investing</p>
+                    </div>
+                  </div>
+                  
+                  <div class="column1">
+                    <div class="card1">
+                       <p class="top">Clients &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <span style="color:#53f241;font-weight: 900;font-size: 15px;">%</span></p>
+                      <p class="center">2476</p>
+                      <p class="low">HNI’s from across the world</p>
+                    </div>
+                  </div>
+              </div>
+            </div>   
+        </div>  
+        
+        <div class="inline1">
+            <div class="card3">
+              <img src="images/image13.jpg" alt="Avatar" style="width:100%;height:50vh;">
+              <div class="container2">
+                <p style="color:#bfbeba;margin-top: 15px;" class="rahul" align="center">NEWS TECH</p>
+                <b class="middle" align="center">By 2030, every person in the planet will have a smartphone</b>
+                <p style="color: #bfbeba;" align="center" class="rahul1"><i style='font-size:24px' class='far'>&#xf017;</i>August 1, 2018</p>
+                
+                
+              </div>
+            </div> 
+            <div class="card3">
+              <img src="images/image14.jpg" alt="Avatar" style="width:100%; height:50vh;">
+              <div class="container2">
+                <p style="color:#bfbeba;margin-top: 15px;" class="rahul" align="center">LIFESTYLE, TRAVEL</p>
+                <b class="middle" >Four places you need to visit if you are nature lover</b>
+                <p style="color: #bfbeba;" align="center" class="rahul1"><i style='font-size:24px' class='far'>&#xf017;</i>August 1, 2018</p> 
+                 
+              </div>
+            </div> 
+            <div class="card3">
+              <img src="images/image15.jpg" alt="Avatar" style="width:100%; height:50vh;">
+              <div class="container2">
+                <p style="color:#bfbeba;margin-top: 15px;" class="rahul" align="center">MISC, TIPS</p>
+                <b class="middle" align="center">Why you should hire a lawyer to prepare tour privacy policy</b>
+                <p style="color: #bfbeba;" align="center" class="rahul1"><i style='font-size:24px' class='far'>&#xf017;</i>August 1, 2018</p>
+               
+              </div>
+            </div> 
+        </div> 
+        <div class="all">     
+          <button class="arti" align="center">VIEW ALL ARTICLES</button>
+        </div>
+
+        <!--registration page--->
+        <script type="text/javascript">
+     function registration()
+  {
+
+    var name= document.getElementById("t1").value;
+    var email= document.getElementById("t2").value;
+    var uname= document.getElementById("t3").value;
+    var pwd= document.getElementById("t4").value;     
+    var cpwd= document.getElementById("t5").value;
+    
+
+
+        //email id expression code
+    var pwd_expression = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/;
+    var letters = /^[A-Za-z]+$/;
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+    if(name=='')
+    {
+      alert('Please enter your name');
+    }
+    else if(!letters.test(name))
+    {
+      alert('Name field required only alphabet characters');
+    }
+    else if(email=='')
+    {
+      alert('Please enter your user email id');
+    }
+    else if (!filter.test(email))
+    {
+      alert('Invalid email');
+    }
+    else if(uname=='')
+    {
+      alert('Please enter the user name.');
+    }
+    else if(!letters.test(uname))
+    {
+      alert('User name field required only alphabet characters');
+    }
+    else if(pwd=='')
+    {
+      alert('Please enter Password');
+    }
+    else if(cpwd=='')
+    {
+      alert('Enter Confirm Password');
+    }
+    else if(!pwd_expression.test(pwd))
+    {
+      alert ('Upper case, Lower case, Special character and Numeric letter are required in Password filed');
+    }
+    else if(pwd != cpwd)
+    {
+      alert ('Password not Matched');
+    }
+    else if(document.getElementById("t5").value.length < 6)
+    {
+      alert ('Password minimum length is 6');
+    }
+    else if(document.getElementById("t5").value.length > 12)
+    {
+      alert ('Password max length is 12');
+    }
+    else
+    {                                   
+        window.location.href = "welcome.html";
+    }
+  }
+    
+  </script>
+  <style>
+    .background{
+      background-color:#fff;
+      
+    }
+    .tb {
+        border-radius:10px;
+        padding: 20px; 
+        width: 200px;
+        height: 10px;    
+    }
+    .btn{
+      border-radius: 12px;
+      width:200px;
+      height:30px;
+      background-color: #EED108;
+      color: #000;
+      font-size:17px;
+    }
+    .details{
+      text-align: right;
+      margin-right:25%;
+      margin-top:7px;
+      color:#fff;
+      font-size: 30px;
+    }
+    .field{
+      color: #fff;
+      font-size: 20px;
+
+    }
+    .b{
+      width: 100%;
+      height: 100vh;
+      background-color: #b3e3bd;
+    }
+  </style>  
+  </head>
+
+<body class="background">
+  <!-- Main div code -->
+  <div class="b">
+    <div id="main">
+      <div class="h-tag"> 
+        <h1 align="center" style="color: #000;margin-top: 50px; padding: 10px;">Please register</h1>
+
+      </div>
+      <!-- create account div -->
+      <div class="login">
+        <table cellspacing="2"  cellpadding="8" border="0" align="center">
+          <tr>
+            <td align="right" class="field" style="color: black;">Enter Name :</td>
+            <td><input type="text" placeholder="Enter user name here" id="t1" class="tb" /></td>
+          </tr>
+          <tr>
+            <td align="right" class="field" style="color: black;">Enter Email ID :</td>
+            <td><input type="text" placeholder="Enter Email ID here" id="t2" class="tb" /></td>
+          </tr>
+          <tr>
+            <td align="right" class="field" style="color: black;">Enter Username :</td>
+            <td><input type="text" placeholder="Enter Username here" id="t3" class="tb" /></td>
+          </tr>
+          <tr>
+            <td align="right" class="field" style="color: black;">Enter Password :</td>
+            <td><input type="password" placeholder="Enter Password here" id="t4" class="tb" /></td>
+          </tr>
+          <tr>
+            <td align="right" class="field" style="color: black;">Enter Confirm Password :</td>
+            <td><input type="password" placeholder="Enter Password here" id="t5" class="tb" /></td>
+          </tr>
+          <tr>
+          <td></td>
+          <td>
+          
+            <input type="submit" value="Create Account" class="btn" onclick="registration()" /></td>
+          </tr>``
+        </table>
+      </div>
+    <!-- registration page ends -->
+    </div>
+  </div>  
+  <div class="line">
+      <hr>
+  </div>  
+  <div class="footer">
+      <b>Exponents^</b>
+      <p align="center" style="color:#afbdb2;font-size: 15px;font-weight: 200;">Copyright © 2019 Brand Exponents.
+      All Rights Reserved</p>
+      <table  align="center">
+          <tr >
+            <td class="pinky"> <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a></td>
+            <td class="pinky"> <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a></td>
+            <td class="pinky"> <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"/></a></td>
+            <td class="pinky"> <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png"/></a></td>
+          </tr>
+        </table>    
+        
+  </div>  
+
+
+  </body>
+</html> 
